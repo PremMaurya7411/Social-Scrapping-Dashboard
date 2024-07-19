@@ -1,0 +1,175 @@
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loader-container p {
+    margin: 0;
+  }
+  
+  .table-container {
+    margin-top: 28px;
+  }
+  
+  .table-header-cell {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .table-cell {
+    text-align: right;
+  }
+  
+  .search-input {
+    margin-top: 1.6rem;
+  }
+  
+  .search-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 576px) {
+    .search-input {
+      margin-top: 0;
+    }
+  }
+  .table-cell {
+    padding: 12px; /* Adjust as needed */
+  }
+  
+  /* Styling the first column */
+  .table-cell:first-child {
+    text-align: left;
+  }
+  
+  /* Styling specific columns */
+  .table-cell:nth-child(2),
+  .table-cell:nth-child(4) {
+    text-align: center; /* Example: Center aligning the second and fourth columns */
+  }
+  
+  /* Styling specific rows */
+  .table-row:nth-child(odd) .table-cell {
+    background-color: #f2f2f2; /* Example: Applying background color to odd rows */
+  }
+  
+  /* Styling specific cells */
+  .table-row:nth-child(3) .table-cell:nth-child(2) {
+    font-weight: bold; /* Example: Applying bold font to the second cell in the third row */
+  }
+  .tweet-content-cell {
+    text-align: center;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loader {
+    width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color: #0000;
+  background: linear-gradient(90deg,#0f0f0f calc(50% + 0.5ch),#f0ebeb 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: l7 2s infinite steps(11);
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l7 {to{background-position: left}}
+    
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    margin-right: 10px; /* Adjust spacing between input and button */
+  }
+  
+  .search-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition effect on border color */
+  }
+  
+  .search-input input:focus {
+    border-color: #007bff; /* Border color on focus */
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect on background color */
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+  }
+  
+  .table-container {
+    margin-top: 28px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+  }
+  
+  .table th {
+    font-weight: bold;
+    background-color: #7a7a7c;
+    text-align: center;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f5f5f5; /* Change background color on row hover */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #fafafa; /* Alternate row background color */
+  }
+  
+  .table tbody tr:hover td {
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .h4{
+
+  }
